@@ -1,4 +1,4 @@
-package com.kulkov;
+package com.kulkov.luckyTicket;
 
 import java.io.*;
 import java.util.ArrayList;
