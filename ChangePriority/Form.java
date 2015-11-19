@@ -1,8 +1,6 @@
 package com.kulkov.priorityThread;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by Pavel Kulkov on 15.11.2015.
@@ -13,10 +11,10 @@ public class Form extends JFrame{
     private JLabel valueFirstThread;
     private JLabel valueSecondThread;
     private JPanel panel;
-    private JLabel eq;
+    private JLabel difference;
 
-    public void setEq(String value) {
-        eq.setText(value);
+    public void setDifference(String value) {
+        difference.setText(value);
     }
 
     public void setValueFirstThread(String value) {
@@ -41,12 +39,6 @@ public class Form extends JFrame{
         pack();
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        priorityFirstThread.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-
-            }
-        });
     }
 
 }

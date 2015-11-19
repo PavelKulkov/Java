@@ -15,10 +15,10 @@ public class ChildThread extends Thread {
         for (int i = 0;;i++) {
             this.value = String.valueOf(i);
             try {
-                //Thread.sleep(100);
-            } catch (Exception ex) {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-
         }
     }
 }
